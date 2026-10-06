@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Main/">
+    <Project Path="../BusinessLayer/BusinessLayer.csproj" />
+    <Project Path="../ModelLayer/ModelLayer.csproj" />
+    <Project Path="../RepositoryLayer/RepositoryLayer.csproj" />
+    <Project Path="Fundoo.csproj" />
+  </Folder>
+  <Folder Name="/Messaging/">
+    <Project Path="../../MessagingServices/MessagingServiceAPI/MessagingServiceAPI.csproj" />
+    <Project Path="../../MessagingServices/MessagingServiceBL/MessagingServiceBL.csproj" />
+    <Project Path="../../MessagingServices/MessagingServiceML/MessagingServiceML.csproj" />
+    <Project Path="../../MessagingServices/MessagingServiceRL/MessagingServiceRL.csproj" />
+  </Folder>
+</Solution>
