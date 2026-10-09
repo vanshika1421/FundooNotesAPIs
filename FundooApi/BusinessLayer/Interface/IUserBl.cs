@@ -18,7 +18,7 @@ namespace BusinessLayer.Interface
     string token,
     DateTime expiry);
         Task<bool> ResetPasswordAsync(
-    string email,
+ 
     string token,
     string newPassword);
     }

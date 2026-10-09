@@ -63,7 +63,7 @@ namespace Fundoo.Controllers
         public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
         {
             var result = await _userBl.ResetPasswordAsync(
-                model.Email,
+             
                 model.Token,
                 model.NewPassword);
 

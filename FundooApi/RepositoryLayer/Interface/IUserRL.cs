@@ -12,9 +12,6 @@ namespace ServiceLayer.Interface
         LoginModel LoginUserRL(LoginModel loginModel);
         Task<UserEntity?> GetUserByEmailAsync(string email);
         Task<bool> SaveResetTokenAsync(string email, string token, DateTime expiry);
-        Task<bool> ResetPasswordAsync(
-    string email,
-    string token,
-    string newPassword);
+        Task<bool> ResetPasswordAsync(string token,string newPassword);
     }
 }
