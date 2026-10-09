@@ -71,11 +71,26 @@ namespace Fundoo
             builder.Services.AddScoped<JwtService>();
             builder.Services.AddHttpClient();
             builder.Services.AddHttpClient<MessagingService>();
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFundoo", policy =>
+                {
+                    policy
+                        .WithOrigins("https://localhost:53351")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowFundoo");
             app.UseAuthentication();
            app.UseAuthorization();
 

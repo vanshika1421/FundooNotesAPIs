@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer;
 using ServiceLayer.Interface;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace BusinessLayer.Service
 {
@@ -8,6 +10,14 @@ namespace BusinessLayer.Service
     {
         private readonly IUserRL _userRL;
         private readonly MessagingService _messagingService;
+
+        public UserBl(
+            IUserRL userRL,
+            MessagingService messagingService)
+        {
+            _userRL = userRL;
+            _messagingService = messagingService;
+        }
 
         public async Task<bool> SaveResetTokenAsync(
             string email,
@@ -18,14 +28,6 @@ namespace BusinessLayer.Service
                 email,
                 token,
                 expiry);
-        }
-
-        public UserBl(
-            IUserRL userRL,
-            MessagingService messagingService)
-        {
-            _userRL = userRL;
-            _messagingService = messagingService;
         }
 
         public RegistrationModel RegisterUserBL(
@@ -50,21 +52,29 @@ namespace BusinessLayer.Service
                 return false;
             }
 
-            // Generate a unique reset token
-            string token = Guid.NewGuid().ToString();
+            // Generate a cryptographically secure random token
+            byte[] tokenBytes = RandomNumberGenerator.GetBytes(32);
+
+            string token = Convert.ToBase64String(tokenBytes)
+                .Replace("+", "-")
+                .Replace("/", "_")
+                .Replace("=", "");
 
             // Token will expire after 15 minutes
             DateTime expiry = DateTime.UtcNow.AddMinutes(15);
 
-            // Save token and expiry in database
+            // Hash the token before storing it in the database
+            string hashedToken = HashResetToken(token);
+
+            // Store ONLY the hashed token in the database
             await _userRL.SaveResetTokenAsync(
                 model.Email,
-                token,
+                hashedToken,
                 expiry);
 
-            // Professional email body
+            // Send the ORIGINAL token to the user's email
             string emailBody = $@"
-Hello {user.FirstName},
+Hello {user.FirstName} {user.LastName},
 
 We received a request to reset the password associated with your Fundoo Notes account.
 
@@ -98,14 +108,26 @@ This is an automated email. Please do not reply to this message.
         }
 
         public async Task<bool> ResetPasswordAsync(
-            string email,
             string token,
             string newPassword)
         {
+            // User sends the ORIGINAL token received by email.
+            // Hash it so it can be compared with the hashed token in DB.
+            string hashedToken = HashResetToken(token);
+
+            // Email is no longer required.
+            // Repository will find the user using the hashed token.
             return await _userRL.ResetPasswordAsync(
-                email,
-                token,
+                hashedToken,
                 newPassword);
+        }
+
+        private static string HashResetToken(string token)
+        {
+            byte[] tokenBytes = Encoding.UTF8.GetBytes(token);
+            byte[] hashBytes = SHA256.HashData(tokenBytes);
+
+            return Convert.ToBase64String(hashBytes);
         }
     }
 }
