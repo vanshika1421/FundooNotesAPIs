@@ -98,7 +98,13 @@ namespace Fundoo
             app.MapControllers();
             app.UseSwagger();
             app.UseSwaggerUI();
-
+            app.MapGet("/instance", () =>
+            {
+                return Results.Ok(new
+                {
+                    Instance = Environment.ProcessId
+                });
+            });
             app.Run();
         }
     }
