@@ -1,0 +1,30 @@
+﻿# Build context is the SOLUTION folder (see docker-compose.yml),
+# because this API depends on BusinessLayer, RepositoryLayer and ModelLayer.
+
+# ---------- Stage 1: build ----------
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /src
+
+# Copy only the project files first so "dotnet restore" is cached
+# and only re-runs when a .csproj changes, not on every code edit.
+COPY FundooApi/ModelLayer/ModelLayer.csproj           FundooApi/ModelLayer/
+COPY FundooApi/RepositoryLayer/RepositoryLayer.csproj FundooApi/RepositoryLayer/
+COPY FundooApi/BusinessLayer/BusinessLayer.csproj     FundooApi/BusinessLayer/
+COPY FundooApi/Fundoo/Fundoo.csproj           FundooApi/Fundoo/
+RUN dotnet restore FundooApi/Fundoo/Fundoo.csproj
+
+# Now the source code
+COPY FundooApi/ModelLayer/      FundooApi/ModelLayer/
+COPY FundooApi/RepositoryLayer/ FundooApi/RepositoryLayer/
+COPY FundooApi/BusinessLayer/   FundooApi/BusinessLayer/
+COPY FundooApi/Fundoo/      FundooApi/Fundoo/
+RUN dotnet publish FundooApi/Fundoo/Fundoo.csproj -c Release -o /app/publish --no-restore
+
+# ---------- Stage 2: runtime (no SDK, much smaller) ----------
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+
+# The aspnet image listens on 8080 and runs as the non-root "app" user by default.
+EXPOSE 8080
+ENTRYPOINT ["dotnet", "Fundoo.dll"]
