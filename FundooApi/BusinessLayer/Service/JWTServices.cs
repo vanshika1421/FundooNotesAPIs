@@ -15,11 +15,12 @@ namespace BusinessLayer.Service
             this.configuration = configuration;
         }
 
-        public string GenerateToken(string email)
+        public string GenerateToken(string email, string userId)
         {
             var claims = new[]
             {
-                new Claim(ClaimTypes.Email, email)
+                new Claim(ClaimTypes.Email, email),
+                new Claim(ClaimTypes.NameIdentifier, userId)
             };
 
             var key = new SymmetricSecurityKey(

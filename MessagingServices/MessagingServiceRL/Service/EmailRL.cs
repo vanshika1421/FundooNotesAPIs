@@ -20,7 +20,7 @@ namespace MessagingServiceRL.Services
             var email = _configuration["EmailSettings:Email"];
             var password = _configuration["EmailSettings:Password"];
             var host = _configuration["EmailSettings:Host"];
-            var port = int.Parse(_configuration["EmailSettings:Port"]!);
+            var port = 587;
 
             MailMessage mail = new MailMessage();
 

@@ -21,3 +21,4 @@ D:\fundo\MessagingServices\MessagingServiceML\obj\Debug\net8.0\MessagingServiceM
 D:\fundo\MessagingServices\MessagingServiceML\obj\Debug\net8.0\refint\MessagingServiceML.dll
 D:\fundo\MessagingServices\MessagingServiceML\obj\Debug\net8.0\MessagingServiceML.pdb
 D:\fundo\MessagingServices\MessagingServiceML\obj\Debug\net8.0\ref\MessagingServiceML.dll
+D:\FundoNotesAPIs\MessagingServices\MessagingServiceML\obj\Debug\net8.0\Messagin.4F82560A.Up2Date

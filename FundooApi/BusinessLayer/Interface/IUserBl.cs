@@ -11,6 +11,8 @@ namespace BusinessLayer.Interface
         LoginModel LoginUserBL(
             LoginModel loginModel);
 
+        Task<(LoginModel user, int userId, string userName)> GetLoginUserWithIdAsync(string email, string password);
+
         Task<bool> ForgotPasswordAsync(
             ForgotPasswordModel model);
         Task<bool> SaveResetTokenAsync(
@@ -18,7 +20,7 @@ namespace BusinessLayer.Interface
     string token,
     DateTime expiry);
         Task<bool> ResetPasswordAsync(
- 
+
     string token,
     string newPassword);
     }

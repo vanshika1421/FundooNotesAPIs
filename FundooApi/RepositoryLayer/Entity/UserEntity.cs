@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 namespace RepositoryLayer.Entity
 {
     public class UserEntity
-    {
+    { 
         [Key]
         public int Id { get; set; }
         [Required]
