@@ -77,3 +77,5 @@ D:\fundo\MessagingServices\MessagingServiceAPI\obj\Debug\net8.0\refint\Messaging
 D:\fundo\MessagingServices\MessagingServiceAPI\obj\Debug\net8.0\MessagingServiceAPI.pdb
 D:\fundo\MessagingServices\MessagingServiceAPI\obj\Debug\net8.0\MessagingServiceAPI.genruntimeconfig.cache
 D:\fundo\MessagingServices\MessagingServiceAPI\obj\Debug\net8.0\ref\MessagingServiceAPI.dll
+D:\FundoNotesAPIs\MessagingServices\MessagingServiceAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\FundoNotesAPIs\MessagingServices\MessagingServiceAPI\bin\Debug\net8.0\appsettings.json

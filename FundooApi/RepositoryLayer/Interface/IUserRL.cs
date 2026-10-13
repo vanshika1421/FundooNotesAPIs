@@ -10,6 +10,7 @@ namespace ServiceLayer.Interface
     {
         RegistrationModel RegisterUserRL(RegistrationModel registrationModel);
         LoginModel LoginUserRL(LoginModel loginModel);
+        Task<(LoginModel user, int userId, string userName)> GetLoginUserWithIdAsync(string email, string password);
         Task<UserEntity?> GetUserByEmailAsync(string email);
         Task<bool> SaveResetTokenAsync(string email, string token, DateTime expiry);
         Task<bool> ResetPasswordAsync(string token,string newPassword);

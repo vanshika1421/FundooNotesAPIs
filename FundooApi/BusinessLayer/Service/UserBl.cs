@@ -41,6 +41,11 @@ namespace BusinessLayer.Service
             return _userRL.LoginUserRL(loginModel);
         }
 
+        public async Task<(LoginModel user, int userId, string userName)> GetLoginUserWithIdAsync(string email, string password)
+        {
+            return await _userRL.GetLoginUserWithIdAsync(email, password);
+        }
+
         public async Task<bool> ForgotPasswordAsync(
             ForgotPasswordModel model)
         {

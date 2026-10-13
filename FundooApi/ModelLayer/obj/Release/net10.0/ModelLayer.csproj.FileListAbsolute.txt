@@ -1,0 +1,13 @@
+D:\FundoNotesAPIs\FundooApi\ModelLayer\bin\Release\net10.0\ModelLayer.deps.json
+D:\FundoNotesAPIs\FundooApi\ModelLayer\bin\Release\net10.0\ModelLayer.dll
+D:\FundoNotesAPIs\FundooApi\ModelLayer\bin\Release\net10.0\ModelLayer.pdb
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.AssemblyInfoInputs.cache
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.AssemblyInfo.cs
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.csproj.CoreCompileInputs.cache
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.sourcelink.json
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.dll
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\refint\ModelLayer.dll
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.pdb
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ref\ModelLayer.dll
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Release\net10.0\ModelLayer.csproj.Up2Date

@@ -25,7 +25,7 @@ namespace BusinessLayer.Service
             };
 
             await _httpClient.PostAsJsonAsync(
-                "https://localhost:7002/api/Email/send",
+                "http://localhost:5033/api/Email/send",
                 request);
         }
     }

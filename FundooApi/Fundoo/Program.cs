@@ -38,7 +38,17 @@ namespace Fundoo
                 Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
         };
     });
+            var jwtKey = builder.Configuration["Jwt:Key"];
+            var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+            var jwtAudience = builder.Configuration["Jwt:Audience"];
 
+            if (string.IsNullOrWhiteSpace(jwtKey) ||
+                string.IsNullOrWhiteSpace(jwtIssuer) ||
+                string.IsNullOrWhiteSpace(jwtAudience))
+            {
+                throw new InvalidOperationException(
+                    "JWT configuration is missing. Check Jwt:Key, Jwt:Issuer, and Jwt:Audience.");
+            }
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
             builder.Services.AddScoped<IPasswordHasher<UserEntity>, PasswordHasher<UserEntity>>();
@@ -64,6 +74,17 @@ namespace Fundoo
            
         });
             builder.Services.AddScoped<IUserRL, UserRl>();
+            var connectionString =
+    builder.Configuration.GetConnectionString("FundooConnection");
+
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                throw new InvalidOperationException(
+                    "Database connection string 'FundooConnection' is missing.");
+            }
+
+            builder.Services.AddDbContext<FundooContext>(options =>
+                options.UseNpgsql(connectionString));
             builder.Services.AddDbContext<FundooContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("FundooConnection")

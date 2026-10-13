@@ -34,3 +34,4 @@ D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.dll
 D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\refint\ModelLayer.dll
 D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.pdb
 D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\ref\ModelLayer.dll
+D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.csproj.Up2Date

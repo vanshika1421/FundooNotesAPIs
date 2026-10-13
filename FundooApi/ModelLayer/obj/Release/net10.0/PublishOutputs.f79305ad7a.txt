@@ -1,0 +1,3 @@
+D:\FundoNotesAPIs\Published\Fundoo\ModelLayer.dll
+D:\FundoNotesAPIs\Published\Fundoo\ModelLayer.deps.json
+D:\FundoNotesAPIs\Published\Fundoo\ModelLayer.pdb
