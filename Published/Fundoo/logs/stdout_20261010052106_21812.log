@@ -1,7 +1,0 @@
-warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
-      Failed to determine the https port for redirect.
-info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-      Executed DbCommand (182ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?' (DbType = DateTime), @p4='?', @p5='?', @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
-      INSERT INTO "Users" ("FirstName", "LastName", "ResetToken", "ResetTokenExpiry", email, password, "phoneNumber", "userName")
-      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
-      RETURNING "Id";
