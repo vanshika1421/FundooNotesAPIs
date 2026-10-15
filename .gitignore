@@ -7,6 +7,9 @@
 **/obj/
 
 # Visual Studio
-.vs/
+*.vs/
 *.user
 *.suo
+# Published deployment files
+publish/
+Published/
