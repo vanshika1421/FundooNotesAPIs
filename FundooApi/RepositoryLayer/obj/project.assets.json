@@ -1996,11 +1996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
+      "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
       "projectName": "RepositoryLayer",
-      "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
+      "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
       "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-      "outputPath": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\obj\\",
+      "outputPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2022,8 +2022,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj": {
-              "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj"
+            "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj": {
+              "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj"
             }
           }
         }

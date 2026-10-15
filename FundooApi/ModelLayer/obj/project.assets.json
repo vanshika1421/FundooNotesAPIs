@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj",
+      "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj",
       "projectName": "ModelLayer",
-      "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj",
+      "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj",
       "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-      "outputPath": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\obj\\",
+      "outputPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

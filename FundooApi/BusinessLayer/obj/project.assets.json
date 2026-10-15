@@ -413,6 +413,22 @@
           }
         }
       },
+      "Middleware/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "System.IdentityModel.Tokens.Jwt": "8.23.0"
+        },
+        "compile": {
+          "bin/placeholder/Middleware.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Middleware.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "ModelLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1092,6 +1108,11 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "Middleware/1.0.0": {
+      "type": "project",
+      "path": "../Middleware/Middleware.csproj",
+      "msbuildProject": "../Middleware/Middleware.csproj"
+    },
     "ModelLayer/1.0.0": {
       "type": "project",
       "path": "../ModelLayer/ModelLayer.csproj",
@@ -1106,6 +1127,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.Extensions.Configuration.Abstractions >= 10.0.12",
+      "Middleware >= 1.0.0",
       "RepositoryLayer >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.23.0"
     ]
@@ -1117,11 +1139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FundoNotesAPIs\\FundooApi\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\FundooApi\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-      "outputPath": "D:\\FundoNotesAPIs\\FundooApi\\BusinessLayer\\obj\\",
+      "outputPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1143,8 +1165,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj": {
-              "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj"
+            "D:\\FundoNotesAPIs - Copy\\FundooApi\\Middleware\\Middleware.csproj": {
+              "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\Middleware\\Middleware.csproj"
+            },
+            "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj": {
+              "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj": {}
+    "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj": {}
   },
   "projects": {
-    "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj": {
+    "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-        "outputPath": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\obj\\",
+        "outputPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -345,14 +345,14 @@
         }
       }
     },
-    "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj": {
+    "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\RepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-        "outputPath": "D:\\FundoNotesAPIs\\FundooApi\\RepositoryLayer\\obj\\",
+        "outputPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\RepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -374,8 +374,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "D:\\FundoNotesAPIs\\FundooApi\\ModelLayer\\ModelLayer.csproj"
+              "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "D:\\FundoNotesAPIs - Copy\\FundooApi\\ModelLayer\\ModelLayer.csproj"
               }
             }
           }

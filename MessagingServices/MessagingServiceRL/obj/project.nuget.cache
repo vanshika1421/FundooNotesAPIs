@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O2nH0UObwFI=",
+  "dgSpecHash": "fe+k7stWFH4=",
   "success": true,
-  "projectFilePath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj",
+  "projectFilePath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vanshika\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\vanshika\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"

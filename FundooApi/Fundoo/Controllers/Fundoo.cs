@@ -1,8 +1,11 @@
-using BusinessLayer.Interface;
+using BusinessLayer.Interface.Users;
 using BusinessLayer.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ModelLayer;
+using ModelLayer.User.RequestModel;
+using ModelLayer.User.ResponseModel;
+using Middleware.Services.JWT;
+
 namespace Fundoo.Controllers
 {
 
@@ -145,6 +148,25 @@ namespace Fundoo.Controllers
                 Message = "Password reset successfully",
                 Data = responseData
             });
+        }
+        [HttpGet("test-logging")]
+        public IActionResult TestLogging( [FromServices] ILogger<FundooController> logger)
+        {
+            
+
+            try
+            {
+                throw new InvalidOperationException(
+                    "This is a deliberate test exception.");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Test exception occurred.");
+
+                return StatusCode(
+                    500,
+                    "Test exception logged successfully.");
+            }
         }
     }
 }

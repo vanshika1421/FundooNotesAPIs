@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj": {}
+    "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj": {}
   },
   "projects": {
-    "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj": {
+    "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj",
+        "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj",
         "projectName": "MessagingServiceAPI",
-        "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj",
+        "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceAPI\\MessagingServiceAPI.csproj",
         "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-        "outputPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceAPI\\obj\\",
+        "outputPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj": {
-                "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj"
+              "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj": {
+                "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj"
               },
-              "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
-                "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj"
+              "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
+                "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj": {
+    "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj",
+        "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj",
         "projectName": "MessagingServiceBL",
-        "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj",
+        "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceBL\\MessagingServiceBL.csproj",
         "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-        "outputPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceBL\\obj\\",
+        "outputPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceBL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -116,11 +116,11 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
-                "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj"
+              "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
+                "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj"
               },
-              "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj": {
-                "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj"
+              "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj": {
+                "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj"
               }
             }
           }
@@ -161,14 +161,14 @@
         }
       }
     },
-    "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
+    "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj",
+        "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj",
         "projectName": "MessagingServiceML",
-        "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj",
+        "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj",
         "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-        "outputPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\obj\\",
+        "outputPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -228,14 +228,14 @@
         }
       }
     },
-    "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj": {
+    "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj",
+        "projectUniqueName": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj",
         "projectName": "MessagingServiceRL",
-        "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj",
+        "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\MessagingServiceRL.csproj",
         "packagesPath": "C:\\Users\\vanshika\\.nuget\\packages\\",
-        "outputPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceRL\\obj\\",
+        "outputPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceRL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -257,8 +257,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
-                "projectPath": "D:\\FundoNotesAPIs\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj"
+              "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj": {
+                "projectPath": "D:\\FundoNotesAPIs - Copy\\MessagingServices\\MessagingServiceML\\MessagingServiceML.csproj"
               }
             }
           }

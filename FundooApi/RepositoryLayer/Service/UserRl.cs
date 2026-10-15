@@ -1,9 +1,10 @@
-﻿using ModelLayer;
+﻿
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using ModelLayer.User.RequestModel;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
-using ServiceLayer.Interface;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
+using RepositoryLayer.Interface.User;
 
 namespace ServiceLayer
 {
@@ -29,16 +30,16 @@ namespace ServiceLayer
         public RegistrationModel RegisterUserRL(
             RegistrationModel registrationModel)
         {
-            UserEntity user = new UserEntity();
+            UserEntity user = new UserEntity
+            {
+                FirstName = registrationModel.FirstName,
+                LastName = registrationModel.LastName,
+                phoneNumber = registrationModel.ContactNumber,
+                email = registrationModel.email,
+                userName = registrationModel.UserName
+            };
 
-            user.FirstName = registrationModel.FirstName;
-            user.LastName = registrationModel.LastName;
-            user.phoneNumber = registrationModel.ContactNumber;
-
-            user.email = registrationModel.email;
-            user.userName = registrationModel.UserName;
-
-            // Hash the password before storing it
+            // Hash the password before storing it.
             user.password = hasher.HashPassword(
                 user,
                 registrationModel.Password);
@@ -47,40 +48,6 @@ namespace ServiceLayer
             fundooContext.SaveChanges();
 
             return registrationModel;
-        }
-
-        public async Task<bool> ResetPasswordAsync(
-            string hashedToken,
-            string newPassword)
-        {
-            // Find the user using the HASHED reset token
-            var user = await fundooContext.Users
-                .FirstOrDefaultAsync(x => x.ResetToken == hashedToken);
-
-            if (user == null)
-            {
-                return false;
-            }
-
-            // Check whether the reset token has expired
-            if (user.ResetTokenExpiry == null ||
-                user.ResetTokenExpiry < DateTime.UtcNow)
-            {
-                return false;
-            }
-
-            // Hash the new password before storing it
-            user.password = hasher.HashPassword(
-                user,
-                newPassword);
-
-            // Make the reset token single-use
-            user.ResetToken = null;
-            user.ResetTokenExpiry = null;
-
-            await fundooContext.SaveChangesAsync();
-
-            return true;
         }
 
         public LoginModel LoginUserRL(LoginModel loginModel)
@@ -93,30 +60,25 @@ namespace ServiceLayer
                 return null;
             }
 
-            var passwordResult =
-                hasher.VerifyHashedPassword(
-                    user,
-                    user.password,
-                    loginModel.password);
+            var passwordResult = hasher.VerifyHashedPassword(
+                user,
+                user.password,
+                loginModel.password);
 
             if (passwordResult != PasswordVerificationResult.Success)
             {
                 return null;
             }
 
-            // Create a response with user data including userId
-            var loginResponse = new LoginModel
+            return new LoginModel
             {
                 email = user.email,
-                password = "", // Don't return password
+                password = string.Empty
             };
-
-            // Store userId in a temporary property for JWT generation
-            // We'll handle this in the controller
-            return loginResponse;
         }
 
-        public async Task<(LoginModel user, int userId, string userName)> GetLoginUserWithIdAsync(string email, string password)
+        public async Task<(LoginModel user, int userId, string userName)>
+            GetLoginUserWithIdAsync(string email, string password)
         {
             var user = await fundooContext.Users
                 .FirstOrDefaultAsync(x => x.email == email);
@@ -126,11 +88,10 @@ namespace ServiceLayer
                 return (null, 0, "");
             }
 
-            var passwordResult =
-                hasher.VerifyHashedPassword(
-                    user,
-                    user.password,
-                    password);
+            var passwordResult = hasher.VerifyHashedPassword(
+                user,
+                user.password,
+                password);
 
             if (passwordResult != PasswordVerificationResult.Success)
             {
@@ -140,16 +101,16 @@ namespace ServiceLayer
             var loginModel = new LoginModel
             {
                 email = user.email,
-                password = ""
+                password = string.Empty
             };
 
             return (loginModel, user.Id, user.userName);
         }
 
-        public async Task<bool> SaveResetTokenAsync(
+        // Called only after the Business Layer validates the reset JWT.
+        public async Task<bool> UpdatePasswordAsync(
             string email,
-            string token,
-            DateTime expiry)
+            string newPassword)
         {
             var user = await fundooContext.Users
                 .FirstOrDefaultAsync(x => x.email == email);
@@ -159,10 +120,9 @@ namespace ServiceLayer
                 return false;
             }
 
-            // The token received here is already HASHED
-            // by the Business Layer.
-            user.ResetToken = token;
-            user.ResetTokenExpiry = expiry;
+            user.password = hasher.HashPassword(
+                user,
+                newPassword);
 
             await fundooContext.SaveChangesAsync();
 

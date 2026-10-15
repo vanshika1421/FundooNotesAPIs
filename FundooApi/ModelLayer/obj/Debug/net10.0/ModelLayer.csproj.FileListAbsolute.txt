@@ -35,3 +35,16 @@ D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\refint\ModelLayer.dll
 D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.pdb
 D:\fundo\FundooApi\ModelLayer\obj\Debug\net10.0\ref\ModelLayer.dll
 D:\FundoNotesAPIs\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.csproj.Up2Date
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\bin\Debug\net10.0\ModelLayer.deps.json
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\bin\Debug\net10.0\ModelLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\bin\Debug\net10.0\ModelLayer.pdb
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.AssemblyInfoInputs.cache
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.AssemblyInfo.cs
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.csproj.CoreCompileInputs.cache
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.sourcelink.json
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\refint\ModelLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.pdb
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ref\ModelLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\ModelLayer\obj\Debug\net10.0\ModelLayer.csproj.Up2Date

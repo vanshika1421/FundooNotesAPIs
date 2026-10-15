@@ -51,3 +51,21 @@ D:\fundo\FundooApi\RepositoryLayer\obj\Debug\net10.0\refint\RepositoryLayer.dll
 D:\fundo\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.pdb
 D:\fundo\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.genruntimeconfig.cache
 D:\fundo\FundooApi\RepositoryLayer\obj\Debug\net10.0\ref\RepositoryLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\bin\Debug\net10.0\RepositoryLayer.deps.json
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\bin\Debug\net10.0\RepositoryLayer.runtimeconfig.json
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\bin\Debug\net10.0\RepositoryLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\bin\Debug\net10.0\RepositoryLayer.pdb
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\bin\Debug\net10.0\ModelLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\bin\Debug\net10.0\ModelLayer.pdb
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.csproj.AssemblyReference.cache
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.AssemblyInfoInputs.cache
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.AssemblyInfo.cs
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.sourcelink.json
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\Reposito.A0A61804.Up2Date
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\refint\RepositoryLayer.dll
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.pdb
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\RepositoryLayer.genruntimeconfig.cache
+D:\FundoNotesAPIs - Copy\FundooApi\RepositoryLayer\obj\Debug\net10.0\ref\RepositoryLayer.dll

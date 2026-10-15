@@ -20,7 +20,6 @@ namespace RepositoryLayer.Entity
         public string password { get; set; } = string.Empty;
         [Required]
         public string userName { get; set; } = string.Empty;
-        public string? ResetToken { get; set; }
-        public DateTime? ResetTokenExpiry { get; set; }
+       
     }
 }
